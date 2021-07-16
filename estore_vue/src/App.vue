@@ -105,7 +105,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~bulma';
+// @import '~bulma';
 
 .lds-dual-ring {
   display: inline-block;

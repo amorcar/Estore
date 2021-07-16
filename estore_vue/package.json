@@ -2,9 +2,13 @@
   "name": "estore_vue",
   "version": "0.1.0",
   "private": true,
+  "main": "sass/mystyles.scss",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss public/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -21,6 +25,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
+    "node-sass": "^6.0.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
   }
