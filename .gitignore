@@ -155,6 +155,8 @@ dmypy.json
 images/
 auth.txt
 
+estore_vue/public/css/mystyles.css
+
 estore_django/media/uploads/*
 estore_django/media/uploads/uploads/*
 !estore_django/media/uploads/uploads/.gitkeep
